@@ -1,0 +1,24 @@
+<script type="text/javascript" >
+
+maria = prompt("Digite a opção de maria");
+switch(maria) {
+	case 'unhas';
+		alert("gastei com unhas");
+		break;
+	case 'cabeleireiro';
+		alert("gastei com cabelo");
+		break;
+	case 'academia';
+		alert("melhorei a aparencia");
+		break;
+	case 'compras';
+		alert("gastei com compras");
+		break;
+	case 'trabalho';
+		alert("ganhei com trabalho");
+		break;
+	default:
+		alert("gastei com sapatos");
+}	
+	
+	</script>

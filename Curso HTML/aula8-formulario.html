@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AULA de formulário HTML</title>
+		<meta charset = "utf-8">
+	</head>
+
+	<body>
+		<h1> Formulários HTML</h1>
+
+			<form>
+				<fieldset>
+					<legend>CADASTRE-SE</legend>
+
+						Campos com * são de preencimento obrigatório. </br></br>
+						<label for ="nome"> Nome*: </label>
+						<input type="text" name= "nome" id="nome" placeholder="Digite seu nome*" maxlength="10" required/>
+
+						<label for ="sobrenome"> Sobrenome*: </label>
+						<input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome*" maxlength="50" required/>
+
+						<label for="email"> E-mail*: </label>
+						<input type="email" name="email" id="email" placeholder=" exemplo@email.com.br*" required/>
+
+						<label for ="senha"> Senha*: </label>
+						<input type="password" name="senha" id="senha" placeholder=" digite sua senha*"  required/>
+
+						<label for ="idade"> Idade: </label>
+						<input type="number" name="idade" id="idade" placeholder="digite sua idade " maxlength="03"/>
+				</fieldset> </br>
+
+
+				<fieldset>
+					<legend>OUTRAS INFORMAÇÕES</legend>
+						Sexo:
+							<input type="radio" name="sexo" id="radio" required/>
+							<label for ="radio"> </label> Feminino
+							<input type="radio" name="sexo" id="sexo" required/> Masculino
+							<label for ="sexo"> </label>
+
+							<label for="nascimento"> Data de Nascimento*:</label>
+							<input type="date" name="nascimento" id="nascimento" required/>
+
+						Estado:
+							<select name="estado" id="estado" >
+								<optgroup label="Nordeste">
+									<option value="BA">Bahia</option>
+									<option value="CE" selected>Ceará</option>
+								</optgroup>
+
+								<optgroup label="Sudeste">
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="SP">São Paulo</option>
+								</optgroup>
+							</select>
+
+							<label for="cidade">Cidades:</label>
+							<input type="text" id="cidade" placeholder="Digite sua cidade" list="cidades"/>
+							<datalist id="cidades">
+								<option value="Salvador"></option>
+								<option value="Lauro de Freitas"></option>
+								<option value="Fortaleza"></option>
+								<option value="Itapipoca"></option>
+								<option value="Niteroi"></option>
+								<option value="Rio de Janeiro"></option>
+								<option value="São Paulo"></option>
+								<option value="Campinas"></option>
+							</datalist>
+				</fieldset> <br>
+
+
+				<fieldset>
+					<legend>ESCOLHA SUAS BANDAS FAVORITAS NACIONAIS</legend>
+
+					<input type="checkbox" name="nacionais" id="capital inicial" value="Capital Inicial"/>
+					<label for ="capital inicial"> Capital Inicial </label>
+
+					<input type="checkbox" name="nacionais" id="legiao urbana" value="legiao urbana"/>
+					<label for ="legiao urbana"> Legião Urbana </label>
+
+					<input type="checkbox" name="nacionais" id="pitty" value="Pitty"/>
+					<label for ="pitty"> Pitty </label>
+				</fieldset><br>
+
+				<fieldset>
+					<legend>ESCOLHA SUAS BANDAS FAVORITAS INTERNACIONAIS</legend>
+					<input type="checkbox" name="nacionais" id="ACDC" value="ACDC"/>
+					<label for ="ACDC"> ACDC </label>
+
+					<input type="checkbox" name="nacionais" id="Guns" value="Guns"/>
+					<label for ="Guns"> Guns </label>
+
+					<input type="checkbox" name="nacionais" id="Metallica" value="Metallica"/>
+					<label for ="Metallica"> Metallica </label>
+
+					<input type="checkbox" name="nacionais" id="Nirvana" value="Nirvana"/>
+					<label for ="Nirvana"> Nirvana </label>
+
+					<input type="checkbox" name="nacionais" id="U2" value="U2"/>
+					<label for ="U2"> U2 </label>
+				</fieldset><br>
+
+				<fieldset>
+					<legend>ENVIE UMA MENSAGEM</legend>
+					Mensagem
+					<textarea  name="" id="" cols="50" rows="10"> </textarea>
+				</fieldset> <br>
+
+				<fieldset>
+					<legend>OUTROS CAMPOS INTERESANTES</legend>
+
+						<input type="range"/>
+						<input type="time"/>
+						<input type="color"/>
+				</fieldset><br>
+
+				<fieldset>
+					<button type="submit" alex.miranda@ipq.com.br>Enviar</button>
+					<button type="reset">Limpar</button>
+				</fieldset>
+			</form>
+	</body>
+
+
+
+</html>
